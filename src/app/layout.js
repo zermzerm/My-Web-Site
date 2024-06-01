@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <h1>HOME</h1>
+        <nav>네브바</nav>
         {children}
       </body>
     </html>
