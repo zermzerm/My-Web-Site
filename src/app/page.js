@@ -1,8 +1,8 @@
-import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import styles from "./styles.module.css";
+import About from './About';
+import Contact from './Contact';
+import Projects from './Projects';
+import Skills from './Skills';
+import styles from './styles.module.css';
 
 export default function Home() {
   return (
