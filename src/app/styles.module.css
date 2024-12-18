@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #49b293;
 }
 .nav ul {
   list-style: none;
@@ -40,8 +39,11 @@
 /* 자식 스크롤 스냅 영역 */
 .scrollArea {
   scroll-snap-align: start; /* 스크롤 위치 맞춤 */
-  height: 94%;
-  padding-top: 50px;
+  height: 100%;
+}
+
+.scrollArea > * {
+  padding-top: 50px; /* nav 크기만큼 간격 확보 */
 }
 
 /* 여기서부턴 단순 꾸미기 --------------------------- */

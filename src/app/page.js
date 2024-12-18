@@ -1,14 +1,15 @@
-import About from './About';
-import Contact from './Contact';
-import Projects from './Projects';
-import Skills from './Skills';
-import styles from './styles.module.css';
+import MainSection from "./MainSection";
+import About from "./About";
+import Contact from "./Contact";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import styles from "./styles.module.css";
 
 export default function Home() {
   return (
     <div className={styles.scrollContainer}>
       <div className={styles.scrollArea} id="home">
-        Home
+        <MainSection />
       </div>
       <div className={styles.scrollArea} id="about">
         <About />

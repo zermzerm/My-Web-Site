@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* 스크롤바 중복 방지 */
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
