@@ -3,11 +3,11 @@ import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import styles from "./styles.module.css";
+import styles from "./styles/styles.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.scrollContainer}>
+    <main className={styles.scrollContainer}>
       <div className={styles.scrollArea} id="home">
         <MainSection />
       </div>
@@ -23,6 +23,6 @@ export default function Home() {
       <div className={styles.scrollArea} id="contact">
         <Contact />
       </div>
-    </div>
+    </main>
   );
 }
