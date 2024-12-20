@@ -18,27 +18,27 @@ export default function NavLink() {
         </Link>
       </span>
       <ul className={styles.navList}>
-        <li className={status === "home" && styles.navActive}>
+        <li className={status === "home" ? styles.navActive : ""}>
           <Link href="#home" onClick={() => setStatus("home")}>
             Home
           </Link>
         </li>
-        <li className={status === "about" && styles.navActive}>
+        <li className={status === "about" ? styles.navActive : ""}>
           <Link href="#about" onClick={() => setStatus("about")}>
             About
           </Link>
         </li>
-        <li className={status === "skills" && styles.navActive}>
+        <li className={status === "skills" ? styles.navActive : ""}>
           <Link href="#skills" onClick={() => setStatus("skills")}>
             Skills
           </Link>
         </li>
-        <li className={status === "projects" && styles.navActive}>
+        <li className={status === "projects" ? styles.navActive : ""}>
           <Link href="#projects" onClick={() => setStatus("projects")}>
             Projects
           </Link>
         </li>
-        <li className={status === "contact" && styles.navActive}>
+        <li className={status === "contact" ? styles.navActive : ""}>
           <Link href="#contact" onClick={() => setStatus("contact")}>
             Contact
           </Link>
