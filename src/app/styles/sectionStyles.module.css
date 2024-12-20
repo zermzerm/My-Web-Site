@@ -12,3 +12,22 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.skills {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillsContainer {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.customHr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+}
