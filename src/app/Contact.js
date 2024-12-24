@@ -1,3 +1,9 @@
+import contactStyles from "./styles/sectionStyles.module.css";
+
 export default function Contact() {
-  return <section>Contact</section>;
+  return (
+    <section>
+      <div></div>
+    </section>
+  );
 }
