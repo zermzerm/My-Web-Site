@@ -57,3 +57,16 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.contactContainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
