@@ -7,35 +7,37 @@ import SwiperCore from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 export default function Projects() {
   SwiperCore.use([Navigation, Scrollbar, Autoplay]);
   const slideData = [
     {
       id: 1,
-      text: "테스트 테스트1",
+      title: "TodayTrip",
+      img: "/images/spongeandddung.jpg",
+      about: "어떤 프로젝트다",
+      skills: "어떤스킬,어떤스킬,어떤스킬",
     },
     {
       id: 2,
-      text: "테스트 테스트2",
+      title: "Jawstify",
+      img: "/images/spongeandddung.jpg",
+      about: "어떤 프로젝트다",
+      skills: "어떤스킬,어떤스킬,어떤스킬",
     },
     {
       id: 3,
-      text: "테스트 테스트3",
-    },
-    {
-      id: 4,
-      text: "테스트 테스트4",
-    },
-    {
-      id: 5,
-      text: "테스트 테스트5",
+      title: "OpenMind",
+      img: "/images/spongeandddung.jpg",
+      about: "어떤 프로젝트다",
+      skills: "어떤스킬,어떤스킬,어떤스킬",
     },
   ];
   return (
     <section className={projectsStyles.projects}>
       <p className={projectsStyles.projectsTop}>Projects</p>
-      <div className={projectsStyles.projectsContainer}>
+      {/* <div className={projectsStyles.projectsContainer}>
         <div className={projectsStyles.projectsWrapper}>
           <p>TodayTrip</p>
           <div>
@@ -60,22 +62,36 @@ export default function Projects() {
             <div>skills</div>
           </div>
         </div>
-      </div>
-      <div className="swiper-container">
+      </div> */}
+      <div className={projectsStyles.projectSwiperContainer}>
         <Swiper
           loop={true} // 슬라이드 루프
           spaceBetween={50} // 슬라이스 사이 간격
-          slidesPerView={3} // 보여질 슬라이스 수
+          slidesPerView={1} // 보여질 슬라이스 수
           navigation={true} // prev, next button
           autoplay={{
-            delay: 2500,
+            delay: 500000000000000,
             disableOnInteraction: false, // 사용자 상호작용시 슬라이더 일시 정지 비활성
           }}
+          className={projectsStyles.projectSwiper}
         >
           {slideData.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div>
-                <div>{slide.text}</div>
+              <div className={projectsStyles.projectWrapper}>
+                <div>
+                  <Image
+                    src={slide.img}
+                    alt="프로젝트사진"
+                    width={300}
+                    height={300}
+                    className={projectsStyles.projectImg}
+                  />
+                </div>
+                <div className={projectsStyles.projectContent}>
+                  <div>{slide.title}</div>
+                  <div>{slide.skills}</div>
+                  <div>{slide.about}</div>
+                </div>
               </div>
             </SwiperSlide>
           ))}
