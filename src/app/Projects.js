@@ -82,8 +82,8 @@ export default function Projects() {
                   <Image
                     src={slide.img}
                     alt="프로젝트사진"
-                    width={300}
-                    height={300}
+                    width={450}
+                    height={450}
                     className={projectsStyles.projectImg}
                   />
                 </div>

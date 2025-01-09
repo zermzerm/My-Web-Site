@@ -1,22 +1,39 @@
 import sectionStyles from "./styles/sectionStyles.module.css";
+import Image from "next/image";
 
 export default function Skills() {
   return (
     <section className={sectionStyles.skills}>
       <div className={sectionStyles.skillsContainer}>
-        skills
+        <p className={sectionStyles.skillsTitle}>skills</p>
         <hr className={sectionStyles.customHr} />
-        <div>
-          <p>Html</p>
-          <p>Css</p>
-          <p>StyledComponent</p>
-          <p>CssModule</p>
-          <p>React</p>
+        <div className={sectionStyles.skillsWrapper}>
+          <Image src="/images/HTML.svg" width={70} height={70} alt="HTML" />
+          <Image src="/images/CSS.svg" width={70} height={70} alt="CSS" />
+          <Image
+            src="/images/StyledComponents.svg"
+            width={70}
+            height={70}
+            alt="StyledComponents"
+          />
+          <Image src="/images/React.svg" width={70} height={70} alt="HTML" />
+          <Image
+            src="/images/TypeScript.svg"
+            width={70}
+            height={70}
+            alt="React"
+          />
+          <Image
+            src="/images/NextJS-Dark.svg"
+            width={70}
+            height={70}
+            alt="NextJS-Dark"
+          />
+          <Image src="/images/Figma.svg" width={70} height={70} alt="Figma" />
+          <Image src="/images/Git.svg" width={70} height={70} alt="Git" />
           <p>ReactQuery</p>
-          <p>TypeCcript</p>
-          <p>NextJS</p>
-          <p>Recoil</p>
           <p>Zustand</p>
+          <p>Recoil</p>
         </div>
       </div>
     </section>

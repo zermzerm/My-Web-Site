@@ -20,9 +20,21 @@
   align-items: center;
 }
 
+.skillsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skillsContainer {
   border: 1px solid black;
   padding: 10px;
+  border-radius: 12px;
+}
+
+.skillsWrapper {
+  display: flex;
+  gap: 15px;
 }
 
 .customHr {
@@ -89,6 +101,7 @@
 }
 
 .contactContainer {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
