@@ -50,21 +50,26 @@
   align-items: center;
 }
 
-.skillsTitle {
+.skillsContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
-.skillsContainer {
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 12px;
+.skillsTitle {
+  color: #6467c0;
+  font-size: 30px;
 }
 
 .skillsWrapper {
   display: flex;
   gap: 15px;
+}
+
+.skillsImage {
+  border-radius: 15px;
 }
 
 .customHr {

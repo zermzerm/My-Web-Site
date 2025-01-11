@@ -5,8 +5,8 @@ export default function Skills() {
   return (
     <main className={sectionStyles.skills}>
       <section className={sectionStyles.skillsContainer}>
-        <p className={sectionStyles.skillsTitle}>skills</p>
-        <hr className={sectionStyles.customHr} />
+        <h1 className={sectionStyles.skillsTitle}>Skills</h1>
+        {/* <hr className={sectionStyles.customHr} /> */}
         <article className={sectionStyles.skillsWrapper}>
           <Image src="/images/HTML.svg" width={70} height={70} alt="HTML" />
           <Image src="/images/CSS.svg" width={70} height={70} alt="CSS" />
@@ -16,12 +16,12 @@ export default function Skills() {
             height={70}
             alt="StyledComponents"
           />
-          <Image src="/images/React.svg" width={70} height={70} alt="HTML" />
+          <Image src="/images/React.svg" width={70} height={70} alt="React" />
           <Image
             src="/images/TypeScript.svg"
             width={70}
             height={70}
-            alt="React"
+            alt="TypeScript"
           />
           <Image
             src="/images/NextJS-Dark.svg"
@@ -31,9 +31,39 @@ export default function Skills() {
           />
           <Image src="/images/Figma.svg" width={70} height={70} alt="Figma" />
           <Image src="/images/Git.svg" width={70} height={70} alt="Git" />
-          <p>ReactQuery</p>
-          <p>Zustand</p>
-          <p>Recoil</p>
+          <Image src="/images/Github.svg" width={70} height={70} alt="Github" />
+          <Image
+            src="/images/ReactQuery.svg"
+            width={70}
+            height={70}
+            alt="ReactQuery"
+          />
+          <Image
+            src="/images/Zustand.svg"
+            width={70}
+            height={70}
+            alt="Zustand"
+          />
+          <Image
+            src="/images/Recoil.svg"
+            width={70}
+            height={70}
+            alt="Recoil"
+            className={sectionStyles.skillsImage}
+          />
+          <Image
+            src="/images/Netlify.svg"
+            width={70}
+            height={70}
+            alt="Netlify"
+          />
+          <Image src="/images/Vercel.svg" width={70} height={70} alt="Vercel" />
+          <Image
+            src="/images/CSSModule.png"
+            width={70}
+            height={70}
+            alt="CSSModule"
+          />
         </article>
       </section>
     </main>
