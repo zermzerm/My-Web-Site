@@ -8,21 +8,21 @@ import styles from "./styles/styles.module.css";
 export default function Home() {
   return (
     <main className={styles.scrollContainer}>
-      <div className={styles.scrollArea} id="home">
+      <section className={styles.scrollArea} id="home">
         <MainSection />
-      </div>
-      <div className={styles.scrollArea} id="about">
+      </section>
+      <section className={styles.scrollArea} id="about">
         <About />
-      </div>
-      <div className={styles.scrollArea} id="skills">
+      </section>
+      <section className={styles.scrollArea} id="skills">
         <Skills />
-      </div>
-      <div className={styles.scrollArea} id="projects">
+      </section>
+      <section className={styles.scrollArea} id="projects">
         <Projects />
-      </div>
-      <div className={styles.scrollArea} id="contact">
+      </section>
+      <section className={styles.scrollArea} id="contact">
         <Contact />
-      </div>
+      </section>
     </main>
   );
 }

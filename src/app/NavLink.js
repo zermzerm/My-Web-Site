@@ -12,11 +12,11 @@ export default function NavLink() {
   }, []);
   return (
     <>
-      <span className={styles.navTitle}>
+      <section className={styles.navTitle}>
         <Link href="#home" onClick={() => setStatus("home")}>
-          박경서 사이트
+          박경서 포트폴리오
         </Link>
-      </span>
+      </section>
       <ul className={styles.navList}>
         <li className={status === "home" ? styles.navActive : ""}>
           <Link href="#home" onClick={() => setStatus("home")}>

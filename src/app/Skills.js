@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <section className={sectionStyles.skills}>
-      <div className={sectionStyles.skillsContainer}>
+    <main className={sectionStyles.skills}>
+      <section className={sectionStyles.skillsContainer}>
         <p className={sectionStyles.skillsTitle}>skills</p>
         <hr className={sectionStyles.customHr} />
-        <div className={sectionStyles.skillsWrapper}>
+        <article className={sectionStyles.skillsWrapper}>
           <Image src="/images/HTML.svg" width={70} height={70} alt="HTML" />
           <Image src="/images/CSS.svg" width={70} height={70} alt="CSS" />
           <Image
@@ -34,8 +34,8 @@ export default function Skills() {
           <p>ReactQuery</p>
           <p>Zustand</p>
           <p>Recoil</p>
-        </div>
-      </div>
-    </section>
+        </article>
+      </section>
+    </main>
   );
 }

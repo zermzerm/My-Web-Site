@@ -1,16 +1,46 @@
-.main {
+.mainContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding-left: 400px;
 }
 
-.about {
+.mainTitle {
+  font-size: 40px;
+  color: #6467c0;
+}
+
+.mainName {
+  font-size: 50px;
+  color: #7e81cb;
+}
+
+.mainDescription {
+  font-size: 20px;
+  color: #9799d2;
+}
+
+.aboutContainer {
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 400px;
+  gap: 50px;
+}
+
+.aboutContainer h1 {
+  font-size: 30px;
+  color: #6467c0;
+}
+
+.aboutContainer h2 {
+  color: #6467c0;
+}
+
+.aboutContainer p {
+  color: #6467c0;
 }
 
 .skills {
@@ -107,7 +137,7 @@
   align-items: center;
 }
 
-.contactContainer > div {
+.contactContainer > section {
   display: flex;
   flex-direction: column;
   align-items: center;

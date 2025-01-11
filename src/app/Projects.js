@@ -35,7 +35,7 @@ export default function Projects() {
     },
   ];
   return (
-    <section className={projectsStyles.projects}>
+    <main className={projectsStyles.projects}>
       <p className={projectsStyles.projectsTop}>Projects</p>
       {/* <div className={projectsStyles.projectsContainer}>
         <div className={projectsStyles.projectsWrapper}>
@@ -63,7 +63,7 @@ export default function Projects() {
           </div>
         </div>
       </div> */}
-      <div className={projectsStyles.projectSwiperContainer}>
+      <section className={projectsStyles.projectSwiperContainer}>
         <Swiper
           loop={true} // 슬라이드 루프
           spaceBetween={50} // 슬라이스 사이 간격
@@ -77,7 +77,7 @@ export default function Projects() {
         >
           {slideData.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className={projectsStyles.projectWrapper}>
+              <article className={projectsStyles.projectWrapper}>
                 <div>
                   <Image
                     src={slide.img}
@@ -92,11 +92,11 @@ export default function Projects() {
                   <div>{slide.skills}</div>
                   <div>{slide.about}</div>
                 </div>
-              </div>
+              </article>
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
