@@ -48,6 +48,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: white;
 }
 
 .skillsContainer {
@@ -66,6 +67,41 @@
 .skillsWrapper {
   display: flex;
   gap: 15px;
+}
+
+.skillsWrapper li {
+  list-style-type: none;
+  display: inline;
+}
+
+.skillsSubTitle {
+  text-align: center;
+}
+
+.skillsSection {
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #7e81cb;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skillsUtilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skillsListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skillsList {
+  display: flex;
+  gap: 10px;
 }
 
 .skillsImage {
