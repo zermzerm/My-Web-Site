@@ -1,0 +1,8 @@
+//.babelrc 이 파일이 없으면
+//styled-components 관련 플러그인 설정이 빠지므로
+//SSR 스타일이 제대로 안 나오거나, displayName이 적용 안 될 수 있음.
+
+{
+  "presets": ["next/babel"],
+  "plugins": [["styled-components", { "ssr": true, "displayName": true }]]
+}

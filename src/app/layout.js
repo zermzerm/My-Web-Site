@@ -1,4 +1,4 @@
-import NavLink from "./NavLink";
+import NavLink from "../components/NavLink";
 import "./styles/globals.css";
 import styles from "./styles/styles.module.css";
 

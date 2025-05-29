@@ -1,8 +1,8 @@
-import MainSection from "./MainSection";
-import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import MainSection from "../components/MainSection";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 import styles from "./styles/styles.module.css";
 
 export default function Home() {
