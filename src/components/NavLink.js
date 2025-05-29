@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import styles from "./styles/styles.module.css";
+import styled from "styled-components";
 
 export default function NavLink() {
   const [status, setStatus] = useState("");
@@ -12,38 +12,51 @@ export default function NavLink() {
   }, []);
   return (
     <>
-      <section className={styles.navTitle}>
+      <Section>
         <Link href="#home" onClick={() => setStatus("home")}>
           박경서 포트폴리오
         </Link>
-      </section>
-      <ul className={styles.navList}>
-        <li className={status === "home" ? styles.navActive : ""}>
+      </Section>
+      <Ul>
+        <Li active={status === "home"}>
           <Link href="#home" onClick={() => setStatus("home")}>
             Home
           </Link>
-        </li>
-        <li className={status === "about" ? styles.navActive : ""}>
+        </Li>
+        <Li active={status === "about"}>
           <Link href="#about" onClick={() => setStatus("about")}>
             About
           </Link>
-        </li>
-        <li className={status === "skills" ? styles.navActive : ""}>
+        </Li>
+        <Li active={status === "skills"}>
           <Link href="#skills" onClick={() => setStatus("skills")}>
             Skills
           </Link>
-        </li>
-        <li className={status === "projects" ? styles.navActive : ""}>
+        </Li>
+        <Li active={status === "projects"}>
           <Link href="#projects" onClick={() => setStatus("projects")}>
             Projects
           </Link>
-        </li>
-        <li className={status === "contact" ? styles.navActive : ""}>
+        </Li>
+        <Li active={status === "contact"}>
           <Link href="#contact" onClick={() => setStatus("contact")}>
             Contact
           </Link>
-        </li>
-      </ul>
+        </Li>
+      </Ul>
     </>
   );
 }
+
+const Section = styled.section`
+  padding-right: 200px;
+  color: #6467c0;
+`;
+
+const Ul = styled.ul`
+  padding-left: 200px;
+`;
+
+const Li = styled.li`
+  color: ${({ active }) => (active ? "#6467c0" : "#fff")};
+`;

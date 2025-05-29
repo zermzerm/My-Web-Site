@@ -1,4 +1,4 @@
-import sectionStyles from "./styles/sectionStyles.module.css";
+import sectionStyles from "../app/styles/sectionStyles.module.css";
 import Image from "next/image";
 
 export default function Skills() {

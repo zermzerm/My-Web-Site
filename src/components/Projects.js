@@ -1,5 +1,5 @@
 "use client";
-import projectsStyles from "./styles/sectionStyles.module.css";
+import projectsStyles from "../app/styles/sectionStyles.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, Autoplay } from "swiper/modules";
 import SwiperCore from "swiper";
